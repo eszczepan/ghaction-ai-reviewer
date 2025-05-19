@@ -16,7 +16,8 @@ runs:
   using: "composite"
   steps:
     - name: Run action
-      run: node ${GITHUB_ACTION_PATH}/dist/use-reviewer.js
+      run: node ${GITHUB_ACTION_PATH}/dist/index.cjs
       shell: bash
       env:
         GOOGLE_API_KEY: ${{ inputs.GOOGLE_API_KEY }}
+        GITHUB_TOKEN: ${{ github.token }}
