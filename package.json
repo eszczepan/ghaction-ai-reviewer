@@ -2,7 +2,8 @@
   "name": "use-reviewer",
   "version": "1.0.0",
   "description": "Use AI to review code",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npx rolldown -c rolldown.config.js"
   },
