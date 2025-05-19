@@ -16,7 +16,7 @@ runs:
   using: "composite"
   steps:
     - name: Run action
-      run: node ${GITHUB_ACTION_PATH}/dist/use-ai.js
+      run: node ${GITHUB_ACTION_PATH}/dist/use-reviewer.js
       shell: bash
       env:
         GOOGLE_API_KEY: ${{ inputs.GOOGLE_API_KEY }}
